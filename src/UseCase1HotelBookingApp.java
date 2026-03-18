@@ -88,6 +88,7 @@ class BookingReportService {
         Map<String, Integer> summary = new HashMap<>();
 
         for (Reservation r : bookingHistory.getHistory()) {
+
             summary.put(
                     r.getRoomType(),
                     summary.getOrDefault(r.getRoomType(), 0) + 1
